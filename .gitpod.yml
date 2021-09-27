@@ -6,6 +6,9 @@ tasks:
       npm install
       npm run seed
     command: npm run dev
+    env:
+      SESSION_SECRET: oiwnewerJlw70238974
+      DATABASE_URL: postgres://localhost/postgres
   - name: Frontend
     init: |
       cd client
